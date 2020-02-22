@@ -62,7 +62,7 @@ class check_brackets {
 			if(error_pos == 0) {
 				while(opening_brackets_stack.size()>1)
 					opening_brackets_stack.pop();
-				error_pos = opening_brackets_stack.peek().position;
+				error_pos = opening_brackets_stack.peek().position+1;
 			}
 			System.out.println(error_pos);
 		}
